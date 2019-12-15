@@ -20,6 +20,8 @@ public class Base {
 			+ "\\src\\test\\resources\\Properties\\ProjectProperty.properties";
 
 	// 0 Create a constructor
+	
+	//this is comment for test repository
 
 	public Base() {
 
