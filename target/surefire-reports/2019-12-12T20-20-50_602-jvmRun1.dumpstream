@@ -1,0 +1,2424 @@
+# Created at 2019-12-12T20:22:03.904
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2019-12-12T20:22:04.083
+Unexpected IOException with stream: Failure in after hook:Initializer.afterHooks()
+
+
+# Created at 2019-12-12T20:22:04.105
+Unexpected IOException with stream: Message: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-BO26G71', ip: '169.254.78.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\aminu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 45f3645e14db505ee98ccc8e29e6ee6d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:486)
+	at stepDefinitions.Initializer.afterHooks(Initializer.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+	at org.testng.TestRunner$1.run(TestRunner.java:570)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+	at org.testng.TestRunner.run(TestRunner.java:502)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+
+
+# Created at 2019-12-12T20:22:04.154
+Unexpected IOException with stream:       org.openqa.selenium.WebDriverException: chrome not reachable
+        (Session info: chrome=79.0.3945.79)
+      Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+      System info: host: 'DESKTOP-BO26G71', ip: '169.254.78.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\aminu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+      Session ID: 45f3645e14db505ee98ccc8e29e6ee6d
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+      	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:486)
+      	at stepDefinitions.Initializer.afterHooks(Initializer.java:55)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+      	at java.lang.reflect.Method.invoke(Unknown Source)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+      	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+      	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+      	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+      	at org.testng.TestRunner$1.run(TestRunner.java:570)
+      	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+      	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+      	at org.testng.TestRunner.run(TestRunner.java:502)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+      	at org.testng.TestNG.runSuites(TestNG.java:1049)
+      	at org.testng.TestNG.run(TestNG.java:1017)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+      	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+
+
+# Created at 2019-12-12T20:22:04.184
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:04.204
+Unexpected IOException with stream:   @SDET_RF_SO
+
+
+# Created at 2019-12-12T20:22:04.219
+Unexpected IOException with stream:   Scenario Outline: SDET2019AUG_SDET_Register_Form_Test   # Features/TekSchoolScenarios.feature:70
+
+
+# Created at 2019-12-12T20:22:04.233
+Unexpected IOException with stream:     When User click on myAccount menu on top of the page  # TekSchoolScenariosStepDefinitions.user_click_on_myAccount_menu_on_top_of_the_page()
+
+
+# Created at 2019-12-12T20:22:04.245
+Unexpected IOException with stream:     And User click on register on myAccount menu          # TekSchoolScenariosStepDefinitions.user_click_on_register_on_myAccount_menu()
+
+
+# Created at 2019-12-12T20:22:04.258
+Unexpected IOException with stream:     And User fill register form with below information    # TekSchoolScenariosStepDefinitions.user_fill_register_form_with_below_information(DataTable)
+
+
+# Created at 2019-12-12T20:22:04.270
+Unexpected IOException with stream:     And User click on 'no' radio button for Subscribe     # TekSchoolScenariosStepDefinitions.user_click_on_yes_radio_button_for_Subscribe(String)
+
+
+# Created at 2019-12-12T20:22:04.284
+Unexpected IOException with stream:     And User click on continue button                     # TekSchoolScenariosStepDefinitions.user_click_on_continue_button()
+
+
+# Created at 2019-12-12T20:22:04.298
+Unexpected IOException with stream:     Then User should see 'Your Account Has Been Created!' # TekSchoolScenariosStepDefinitions.user_should_see_Your_Account_Has_Been_Created()
+
+
+# Created at 2019-12-12T20:22:04.760
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:04.768
+Unexpected IOException with stream: Failed scenarios:
+
+
+# Created at 2019-12-12T20:22:04.782
+Unexpected IOException with stream: Features/TekSchoolScenarios.feature:69 
+
+# Created at 2019-12-12T20:22:04.795
+Unexpected IOException with stream: # Scenario Outline: SDET2019AUG_SDET_Register_Form_Test
+
+
+# Created at 2019-12-12T20:22:04.804
+Unexpected IOException with stream: Features/TekSchoolScenarios.feature:70 
+
+# Created at 2019-12-12T20:22:04.814
+Unexpected IOException with stream: # Scenario Outline: SDET2019AUG_SDET_Register_Form_Test
+
+
+# Created at 2019-12-12T20:22:04.822
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:04.832
+Unexpected IOException with stream: 2
+
+# Created at 2019-12-12T20:22:04.845
+Unexpected IOException with stream:  Scenarios (
+
+# Created at 2019-12-12T20:22:04.856
+Unexpected IOException with stream: 2 failed
+
+# Created at 2019-12-12T20:22:04.867
+Unexpected IOException with stream: )
+
+
+# Created at 2019-12-12T20:22:04.878
+Unexpected IOException with stream: 18
+
+# Created at 2019-12-12T20:22:04.890
+Unexpected IOException with stream:  Steps (
+
+# Created at 2019-12-12T20:22:04.909
+Unexpected IOException with stream: 1 failed
+
+# Created at 2019-12-12T20:22:04.921
+Unexpected IOException with stream: , 
+
+# Created at 2019-12-12T20:22:04.933
+Unexpected IOException with stream: 9 skipped
+
+# Created at 2019-12-12T20:22:04.947
+Unexpected IOException with stream: , 
+
+# Created at 2019-12-12T20:22:04.959
+Unexpected IOException with stream: 8 passed
+
+# Created at 2019-12-12T20:22:04.972
+Unexpected IOException with stream: )
+
+
+# Created at 2019-12-12T20:22:04.985
+Unexpected IOException with stream: 1m
+
+# Created at 2019-12-12T20:22:05.063
+Unexpected IOException with stream: 9.194s
+
+
+# Created at 2019-12-12T20:22:05.076
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.089
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created at 2019-12-12T20:22:05.099
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.107
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2019-12-12T20:22:05.117
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.129
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.140
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.153
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.164
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.174
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.184
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.194
+Unexpected IOException with stream: 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+
+# Created at 2019-12-12T20:22:05.205
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.216
+Unexpected IOException with stream: 	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.226
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.236
+Unexpected IOException with stream: 	at pageObjects.TekSchoolScenariosPageObject.confirmationMessage(TekSchoolScenariosPageObject.java:170)
+
+# Created at 2019-12-12T20:22:05.244
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.253
+Unexpected IOException with stream: 	at stepDefinitions.TekSchoolScenariosStepDefinitions.user_should_see_Your_Account_Has_Been_Created(TekSchoolScenariosStepDefinitions.java:92)
+
+# Created at 2019-12-12T20:22:05.260
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.269
+Unexpected IOException with stream: 	at ?.Then User should see 'Your Account Has Been Created!'(Features/TekSchoolScenarios.feature:65)
+
+# Created at 2019-12-12T20:22:05.277
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.289
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.299
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-BO26G71', ip: '169.254.78.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\aminu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 45f3645e14db505ee98ccc8e29e6ee6d
+
+# Created at 2019-12-12T20:22:05.311
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.324
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2019-12-12T20:22:05.336
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.345
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.372
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.382
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.391
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.402
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.412
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.423
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-12-12T20:22:05.434
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.445
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-12-12T20:22:05.454
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.464
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-12-12T20:22:05.474
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.485
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+
+# Created at 2019-12-12T20:22:05.499
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.510
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-12-12T20:22:05.519
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.532
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+
+# Created at 2019-12-12T20:22:05.565
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.577
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+
+# Created at 2019-12-12T20:22:05.590
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.602
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:486)
+
+# Created at 2019-12-12T20:22:05.615
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.627
+Unexpected IOException with stream: 	at stepDefinitions.Initializer.afterHooks(Initializer.java:55)
+
+# Created at 2019-12-12T20:22:05.639
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.652
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2019-12-12T20:22:05.680
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.692
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.718
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.731
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.743
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.755
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:05.770
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.782
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:40)
+
+# Created at 2019-12-12T20:22:05.795
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.807
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created at 2019-12-12T20:22:05.820
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.835
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:34)
+
+# Created at 2019-12-12T20:22:05.846
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.858
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+
+# Created at 2019-12-12T20:22:05.871
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.885
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+
+# Created at 2019-12-12T20:22:05.897
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.909
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+
+# Created at 2019-12-12T20:22:05.923
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.939
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+
+# Created at 2019-12-12T20:22:05.951
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.964
+Unexpected IOException with stream: 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+
+# Created at 2019-12-12T20:22:05.976
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:05.989
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+
+# Created at 2019-12-12T20:22:06.005
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.019
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:06.030
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.041
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:06.053
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.066
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:06.077
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.091
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:06.105
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.119
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:06.131
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.143
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:06.155
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.169
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:06.183
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.194
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:06.206
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.218
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+
+# Created at 2019-12-12T20:22:06.229
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.240
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:06.252
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.263
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:06.274
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.288
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:06.299
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.311
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:06.323
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.334
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:06.346
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.357
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:06.369
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.381
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:06.393
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.404
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:06.416
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.427
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+
+# Created at 2019-12-12T20:22:06.437
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.449
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+
+# Created at 2019-12-12T20:22:06.460
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.472
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+
+# Created at 2019-12-12T20:22:06.483
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.495
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:06.507
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.519
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:06.536
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.549
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:06.561
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.571
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:06.585
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.598
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:06.610
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.625
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:06.637
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.649
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+
+# Created at 2019-12-12T20:22:06.661
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.673
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+
+# Created at 2019-12-12T20:22:06.684
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.696
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+
+# Created at 2019-12-12T20:22:06.706
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.719
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:06.768
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.780
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:06.792
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.807
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:06.819
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.833
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:06.847
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.858
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:06.875
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.891
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:06.908
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.925
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+
+# Created at 2019-12-12T20:22:06.937
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.948
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+
+# Created at 2019-12-12T20:22:06.959
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.971
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+
+# Created at 2019-12-12T20:22:06.984
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:06.997
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+
+# Created at 2019-12-12T20:22:07.014
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.025
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+
+# Created at 2019-12-12T20:22:07.037
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.052
+Unexpected IOException with stream: 	at org.testng.TestRunner$1.run(TestRunner.java:570)
+
+# Created at 2019-12-12T20:22:07.065
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.077
+Unexpected IOException with stream: 	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+
+# Created at 2019-12-12T20:22:07.090
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.100
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+
+# Created at 2019-12-12T20:22:07.115
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.132
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:502)
+
+# Created at 2019-12-12T20:22:07.149
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.163
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+
+# Created at 2019-12-12T20:22:07.174
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.189
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+
+# Created at 2019-12-12T20:22:07.206
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.221
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+
+# Created at 2019-12-12T20:22:07.234
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.246
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+
+# Created at 2019-12-12T20:22:07.259
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.305
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created at 2019-12-12T20:22:07.316
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.330
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+
+# Created at 2019-12-12T20:22:07.348
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.363
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+
+# Created at 2019-12-12T20:22:07.378
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.390
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+
+# Created at 2019-12-12T20:22:07.404
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.437
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1049)
+
+# Created at 2019-12-12T20:22:07.449
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.461
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1017)
+
+# Created at 2019-12-12T20:22:07.477
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.490
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+
+# Created at 2019-12-12T20:22:07.501
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.517
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+
+# Created at 2019-12-12T20:22:07.530
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.542
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+
+# Created at 2019-12-12T20:22:07.554
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.568
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+
+# Created at 2019-12-12T20:22:07.583
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.597
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2019-12-12T20:22:07.613
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.626
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2019-12-12T20:22:07.637
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.651
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2019-12-12T20:22:07.666
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.681
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2019-12-12T20:22:07.703
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.719
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.743
+Unexpected IOException with stream: org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-BO26G71', ip: '169.254.78.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00CCA113+1548563]
+	Ordinal0 [0x00C4DDA1+1039777]
+	Ordinal0 [0x00BCE32E+516910]
+	Ordinal0 [0x00BC8012+491538]
+	Ordinal0 [0x00BC86EB+493291]
+	Ordinal0 [0x00BC9855+497749]
+	Ordinal0 [0x00BC5885+481413]
+	Ordinal0 [0x00BCF0D0+520400]
+	Ordinal0 [0x00B7C030+180272]
+	Ordinal0 [0x00B7B59D+177565]
+	Ordinal0 [0x00B795FB+169467]
+	Ordinal0 [0x00B6160A+71178]
+	Ordinal0 [0x00B62690+75408]
+	Ordinal0 [0x00B62629+75305]
+	Ordinal0 [0x00C671B7+1143223]
+	GetHandleVerifier [0x00D62B46+507814]
+	GetHandleVerifier [0x00D62864+507076]
+	GetHandleVerifier [0x00D69F47+537511]
+	GetHandleVerifier [0x00D63402+510050]
+	Ordinal0 [0x00C5F29C+1110684]
+	Ordinal0 [0x00C6938B+1151883]
+	Ordinal0 [0x00C694F3+1152243]
+	Ordinal0 [0x00C683F5+1147893]
+	BaseThreadInitThunk [0x755A6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77307B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77307B44+180]
+
+
+# Created at 2019-12-12T20:22:07.763
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.791
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2019-12-12T20:22:07.806
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.869
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:07.884
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.898
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:07.912
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.926
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:07.945
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:07.959
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+
+# Created at 2019-12-12T20:22:08.000
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.013
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+
+# Created at 2019-12-12T20:22:08.027
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.060
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+
+# Created at 2019-12-12T20:22:08.080
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.093
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.110
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.125
+Unexpected IOException with stream: 	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.142
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.157
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.173
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.185
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.197
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.212
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.226
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.239
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.254
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.300
+Unexpected IOException with stream: 	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.346
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.358
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.411
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.424
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.436
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.449
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+
+# Created at 2019-12-12T20:22:08.461
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.473
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+
+# Created at 2019-12-12T20:22:08.485
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.498
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+
+# Created at 2019-12-12T20:22:08.510
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.523
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-12-12T20:22:08.536
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.548
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+
+# Created at 2019-12-12T20:22:08.562
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.575
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+
+# Created at 2019-12-12T20:22:08.588
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.602
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+
+# Created at 2019-12-12T20:22:08.615
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.628
+Unexpected IOException with stream: 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+
+# Created at 2019-12-12T20:22:08.641
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.655
+Unexpected IOException with stream: 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+
+# Created at 2019-12-12T20:22:08.695
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.709
+Unexpected IOException with stream: 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+
+# Created at 2019-12-12T20:22:08.722
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.735
+Unexpected IOException with stream: 	at stepDefinitions.Initializer.beforeHooks(Initializer.java:21)
+
+# Created at 2019-12-12T20:22:08.748
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.762
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2019-12-12T20:22:08.776
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.787
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.800
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.813
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.822
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.834
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:08.846
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.858
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:40)
+
+# Created at 2019-12-12T20:22:08.868
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.879
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created at 2019-12-12T20:22:08.892
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.904
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:34)
+
+# Created at 2019-12-12T20:22:08.916
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.929
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+
+# Created at 2019-12-12T20:22:08.940
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.952
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+
+# Created at 2019-12-12T20:22:08.964
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:08.977
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+
+# Created at 2019-12-12T20:22:08.991
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.008
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+
+# Created at 2019-12-12T20:22:09.022
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.034
+Unexpected IOException with stream: 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+
+# Created at 2019-12-12T20:22:09.046
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.057
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+
+# Created at 2019-12-12T20:22:09.103
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.116
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:09.127
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.139
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:09.151
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.163
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:09.175
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.189
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:09.211
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.226
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:09.237
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.247
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:09.258
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.270
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:09.282
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.295
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:09.306
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.317
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+
+# Created at 2019-12-12T20:22:09.329
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.342
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:09.353
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.365
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:09.378
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.389
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:09.400
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.412
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:09.424
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.436
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:09.448
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.458
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:09.470
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.482
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:09.493
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.504
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:09.515
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.528
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+
+# Created at 2019-12-12T20:22:09.540
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.552
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+
+# Created at 2019-12-12T20:22:09.563
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.573
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+
+# Created at 2019-12-12T20:22:09.584
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.597
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:09.608
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.619
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:09.631
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.642
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:09.653
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.664
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:09.676
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.688
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:09.700
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.712
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:09.722
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.733
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+
+# Created at 2019-12-12T20:22:09.745
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.758
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+
+# Created at 2019-12-12T20:22:09.769
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.780
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+
+# Created at 2019-12-12T20:22:09.792
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.803
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:09.815
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.825
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:09.836
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.847
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:09.858
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.870
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:09.881
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.893
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:09.904
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.916
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:09.926
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.938
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+
+# Created at 2019-12-12T20:22:09.949
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.961
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+
+# Created at 2019-12-12T20:22:09.972
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:09.982
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+
+# Created at 2019-12-12T20:22:09.993
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.004
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+
+# Created at 2019-12-12T20:22:10.015
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.025
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+
+# Created at 2019-12-12T20:22:10.038
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.050
+Unexpected IOException with stream: 	at org.testng.TestRunner$1.run(TestRunner.java:570)
+
+# Created at 2019-12-12T20:22:10.061
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.072
+Unexpected IOException with stream: 	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+
+# Created at 2019-12-12T20:22:10.083
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.095
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+
+# Created at 2019-12-12T20:22:10.106
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.118
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:502)
+
+# Created at 2019-12-12T20:22:10.129
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.141
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+
+# Created at 2019-12-12T20:22:10.152
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.162
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+
+# Created at 2019-12-12T20:22:10.174
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.186
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+
+# Created at 2019-12-12T20:22:10.197
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.209
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+
+# Created at 2019-12-12T20:22:10.220
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.231
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created at 2019-12-12T20:22:10.243
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.254
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+
+# Created at 2019-12-12T20:22:10.264
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.275
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+
+# Created at 2019-12-12T20:22:10.283
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.295
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+
+# Created at 2019-12-12T20:22:10.303
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.316
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1049)
+
+# Created at 2019-12-12T20:22:10.323
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.378
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1017)
+
+# Created at 2019-12-12T20:22:10.389
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.399
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+
+# Created at 2019-12-12T20:22:10.411
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.422
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+
+# Created at 2019-12-12T20:22:10.467
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.481
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+
+# Created at 2019-12-12T20:22:10.540
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.620
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+
+# Created at 2019-12-12T20:22:10.640
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.657
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2019-12-12T20:22:10.672
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.685
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2019-12-12T20:22:10.696
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.708
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2019-12-12T20:22:10.721
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.734
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2019-12-12T20:22:10.747
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.759
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.771
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-BO26G71', ip: '169.254.78.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\aminu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 45f3645e14db505ee98ccc8e29e6ee6d
+
+# Created at 2019-12-12T20:22:10.783
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.795
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2019-12-12T20:22:10.807
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.819
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:10.832
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.844
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:10.856
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.868
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created at 2019-12-12T20:22:10.881
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.894
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-12-12T20:22:10.906
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.919
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-12-12T20:22:10.931
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.943
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-12-12T20:22:10.954
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.967
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+
+# Created at 2019-12-12T20:22:10.976
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:10.989
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-12-12T20:22:11.001
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.013
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+
+# Created at 2019-12-12T20:22:11.025
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.037
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+
+# Created at 2019-12-12T20:22:11.050
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.062
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:486)
+
+# Created at 2019-12-12T20:22:11.074
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.087
+Unexpected IOException with stream: 	at stepDefinitions.Initializer.afterHooks(Initializer.java:55)
+
+# Created at 2019-12-12T20:22:11.100
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.115
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2019-12-12T20:22:11.127
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.139
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:11.151
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.169
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:11.180
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.194
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2019-12-12T20:22:11.206
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.222
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:40)
+
+# Created at 2019-12-12T20:22:11.234
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.248
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created at 2019-12-12T20:22:11.260
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.273
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:34)
+
+# Created at 2019-12-12T20:22:11.285
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.295
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+
+# Created at 2019-12-12T20:22:11.308
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.320
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+
+# Created at 2019-12-12T20:22:11.333
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.346
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+
+# Created at 2019-12-12T20:22:11.357
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.370
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+
+# Created at 2019-12-12T20:22:11.383
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.395
+Unexpected IOException with stream: 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+
+# Created at 2019-12-12T20:22:11.408
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.421
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+
+# Created at 2019-12-12T20:22:11.433
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.445
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:11.457
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.469
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:11.481
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.493
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:11.506
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.518
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:11.529
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.547
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:11.558
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.569
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:11.706
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.724
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:11.742
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.760
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:11.774
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.787
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+
+# Created at 2019-12-12T20:22:11.798
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.810
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+
+# Created at 2019-12-12T20:22:11.822
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.833
+Unexpected IOException with stream: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+
+# Created at 2019-12-12T20:22:11.845
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.856
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:11.868
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.879
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:11.892
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.903
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:11.915
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.927
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:11.939
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.952
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:11.964
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.975
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:11.986
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:11.996
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+
+# Created at 2019-12-12T20:22:12.006
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.017
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+
+# Created at 2019-12-12T20:22:12.028
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.040
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+
+# Created at 2019-12-12T20:22:12.052
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.063
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:12.073
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.081
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:12.090
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.101
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:12.112
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.123
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:12.135
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.146
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:12.192
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.204
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:12.216
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.228
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+
+# Created at 2019-12-12T20:22:12.240
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.251
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+
+# Created at 2019-12-12T20:22:12.262
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.274
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+
+# Created at 2019-12-12T20:22:12.285
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.296
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2019-12-12T20:22:12.310
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.322
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2019-12-12T20:22:12.333
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.344
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2019-12-12T20:22:12.356
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.364
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2019-12-12T20:22:12.376
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.386
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2019-12-12T20:22:12.398
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.410
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-12-12T20:22:12.420
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.433
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+
+# Created at 2019-12-12T20:22:12.444
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.455
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+
+# Created at 2019-12-12T20:22:12.467
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.477
+Unexpected IOException with stream: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+
+# Created at 2019-12-12T20:22:12.490
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.501
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+
+# Created at 2019-12-12T20:22:12.513
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.526
+Unexpected IOException with stream: 	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+
+# Created at 2019-12-12T20:22:12.537
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.548
+Unexpected IOException with stream: 	at org.testng.TestRunner$1.run(TestRunner.java:570)
+
+# Created at 2019-12-12T20:22:12.559
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.571
+Unexpected IOException with stream: 	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+
+# Created at 2019-12-12T20:22:12.582
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.593
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+
+# Created at 2019-12-12T20:22:12.604
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.615
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:502)
+
+# Created at 2019-12-12T20:22:12.627
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.638
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+
+# Created at 2019-12-12T20:22:12.649
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.660
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+
+# Created at 2019-12-12T20:22:12.672
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.682
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+
+# Created at 2019-12-12T20:22:12.693
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.705
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+
+# Created at 2019-12-12T20:22:12.716
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.727
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created at 2019-12-12T20:22:12.740
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.752
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+
+# Created at 2019-12-12T20:22:12.763
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.774
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+
+# Created at 2019-12-12T20:22:12.785
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.796
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+
+# Created at 2019-12-12T20:22:12.807
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.819
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1049)
+
+# Created at 2019-12-12T20:22:12.831
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.842
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1017)
+
+# Created at 2019-12-12T20:22:12.854
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.864
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+
+# Created at 2019-12-12T20:22:12.875
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.887
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+
+# Created at 2019-12-12T20:22:12.899
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.910
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+
+# Created at 2019-12-12T20:22:12.923
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.934
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+
+# Created at 2019-12-12T20:22:12.945
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.958
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2019-12-12T20:22:12.970
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:12.982
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2019-12-12T20:22:12.995
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:13.006
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2019-12-12T20:22:13.018
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:13.029
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2019-12-12T20:22:13.040
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:13.054
+Unexpected IOException with stream: 
+
+
+# Created at 2019-12-12T20:22:14.201
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,runner.TestRunner,null,null,null
+
+
